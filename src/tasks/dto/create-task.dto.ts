@@ -1,9 +1,7 @@
 import { TaskStatus } from 'src/tasks/task-status.enum';
 
-export interface Task {
-  id: string;
+export class CreateTaskDto {
   title: string;
   description: string;
-  //status: 'OPEN' | 'IN_PROGRESS' | 'DONE';
   status: TaskStatus;
 }
